@@ -1,0 +1,37 @@
+Executable = /afs/cern.ch/work/g/gparida/public/XbbWW_PrivateProduction/Production_w_customnano_13_0_13/CMS_FulllSimulation/2016postVFP.sh
+Universe = vanilla
+Notification = ERROR
+Should_Transfer_Files = YES
+Transfer_Output_Files = ""
+Transfer_Input_Files = /afs/cern.ch/work/g/gparida/public/XbbWW_PrivateProduction/Production_w_customnano_13_0_13/CMS_FulllSimulation/2016postVFP.sh, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16wmLHEGEN-01655_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16SIM-01023_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16DIGIPremix-01018_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16HLT-01023_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16RECO-01023_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16MiniAODv2-01078_1_cfg.py, ConfigFiles/HHbbww/2016postVFP/HIG-RunIISummer20UL16NanoAODv9-01056_1_cfg.py
+x509userproxy = $ENV(X509_USER_PROXY)
+requirements = TARGET.OpSysAndVer =?= "AlmaLinux9"
+MY.WantOS = "el7"
+getenv      = True
++JobFlavour = "testmatch"
+request_memory = 12000
+request_cpus = 8
+
+Output = log/HHbbww/2016postVFP/GluGluToRadionToHH_M3000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154504/log_$(Cluster)_$(Process).stdout
+Error  = log/HHbbww/2016postVFP/GluGluToRadionToHH_M3000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154504/log_$(Cluster)_$(Process).stderr
+Log  = log/HHbbww/2016postVFP/GluGluToRadionToHH_M3000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154504/log_$(Cluster)_$(Process).log
+Arguments = $(Cluster) $(Process) /eos/user/g/gparida/XHHbbwww_Samples/HHbbww/2016postVFP/GluGluToRadionToHH_M3000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154504 /cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.6.0/GluGluToRadionToHH_M3000/v1/GluGluToRadionToHH_M3000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball.tar.xz 2000 HIG-RunIISummer20UL16NanoAODv9-01056.root
+Queue 25
+
+Output = log/HHbbww/2016postVFP/Radion_hh_narrow_M1000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stdout
+Error  = log/HHbbww/2016postVFP/Radion_hh_narrow_M1000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stderr
+Log  = log/HHbbww/2016postVFP/Radion_hh_narrow_M1000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).log
+Arguments = $(Cluster) $(Process) /eos/user/g/gparida/XHHbbwww_Samples/HHbbww/2016postVFP/Radion_hh_narrow_M1000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505 /cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.4.2/Radion_hh_narrow_M1000/v1/Radion_hh_narrow_M1000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball.tar.xz 2000 HIG-RunIISummer20UL16NanoAODv9-01056.root
+Queue 25
+
+Output = log/HHbbww/2016postVFP/Radion_hh_narrow_M1500_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stdout
+Error  = log/HHbbww/2016postVFP/Radion_hh_narrow_M1500_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stderr
+Log  = log/HHbbww/2016postVFP/Radion_hh_narrow_M1500_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).log
+Arguments = $(Cluster) $(Process) /eos/user/g/gparida/XHHbbwww_Samples/HHbbww/2016postVFP/Radion_hh_narrow_M1500_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505 /cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.4.2/Radion_hh_narrow_M1500/v1/Radion_hh_narrow_M1500_slc6_amd64_gcc481_CMSSW_7_1_30_tarball.tar.xz 2000 HIG-RunIISummer20UL16NanoAODv9-01056.root
+Queue 25
+
+Output = log/HHbbww/2016postVFP/Radion_hh_narrow_M2000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stdout
+Error  = log/HHbbww/2016postVFP/Radion_hh_narrow_M2000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).stderr
+Log  = log/HHbbww/2016postVFP/Radion_hh_narrow_M2000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505/log_$(Cluster)_$(Process).log
+Arguments = $(Cluster) $(Process) /eos/user/g/gparida/XHHbbwww_Samples/HHbbww/2016postVFP/Radion_hh_narrow_M2000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball/20240531_154505 /cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.4.2/Radion_hh_narrow_M2000/v1/Radion_hh_narrow_M2000_slc6_amd64_gcc481_CMSSW_7_1_30_tarball.tar.xz 2000 HIG-RunIISummer20UL16NanoAODv9-01056.root
+Queue 25

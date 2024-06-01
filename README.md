@@ -100,7 +100,7 @@ The main script, [GetFullSimScriptsFromMCCM.py](GetFullSimScriptsFromMCCM), depe
             with
 
             ```python
-            annotation = cms.untracked.string('Configuration/GenProduction/python/HIG-RunIISummer20UL16wmLHEGENAPV-03448-fragment.py nevts:'+str(options.maxEvents),
+            annotation = cms.untracked.string('Configuration/GenProduction/python/HIG-RunIISummer20UL16wmLHEGENAPV-03448-fragment.py nevts:'+str(options.maxEvents)),
             ```
 
         - Update the gridpack path. Replace line:  ***Do this manually, only in wmLHE file***
